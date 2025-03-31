@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpage</title>
+    <link rel="stylesheet" href="webscript.css">
+    <script>
+        function moveImage() {
+            const image = document.querySelector('img');
+            image.style.transform = 'translateX(200px)';
+            image.style.transition = 'transform 0.5s ease';
+            image.removeEventListener('click', moveImage); // Ensure it only happens once
+        }
+    </script>
+</head>
+<body>
+    <h1>evil spongbob</h1>
+    <p class="traktor">spongbob money</p>
+    <p class="bobik">gangster bob</p>
+    <img src="bob.jpg" width="200" height="200" alt="bob" onclick="moveImage()">
+    <img src="volleybob.jpg" width="200" height="200" style="position: relative; left: 300px;" alt="volleybob">
+    <p class="traktor">volleybob sponge</p>
+
+    <footer>VGhlcmUgYXJlIHRoaW5ncyBpbiB0aGlzIHdvcmxkIHRoYXQgeW91J3JlIG5vdCBtZWFudCB0byBzZWU=</footer>
+</body>
+</html>
